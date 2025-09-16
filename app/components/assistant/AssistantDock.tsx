@@ -43,10 +43,6 @@ function AssistantShell() {
     if (expanded) {
       endRef.current?.scrollIntoView({ behavior: "smooth" });
     }
-    console.log("[assistant:UI] messages update", {
-      count: messages.length,
-      isStreaming,
-    });
   }, [messages, isStreaming, expanded]);
 
   const providerKey = settings[settings.providerId].apiKey;
@@ -61,7 +57,6 @@ function AssistantShell() {
           if (!value) {
             return;
           }
-          console.log("[assistant:UI] collapsed submit", value);
           setExpanded(true);
           sendMessage(value).finally(() => {
             setDraft("");
@@ -139,7 +134,6 @@ function AssistantShell() {
                 if (isStreaming) {
                   stop();
                 }
-                console.log("[assistant:UI] collapse click");
                 setExpanded(false);
               }}
               className="rounded-full border border-white/20 px-3 py-1 text-xs text-zinc-300 hover:bg-white/10"
@@ -199,7 +193,6 @@ function AssistantShell() {
               if (!value) {
                 return;
               }
-              console.log("[assistant:UI] expanded submit", value);
               sendMessage(value).finally(() => setDraft(""));
             }}
             className="space-y-2"
@@ -207,7 +200,7 @@ function AssistantShell() {
             <textarea
               value={draft}
               onChange={(event) => setDraft(event.target.value)}
-              onFocus={() => console.log("[assistant:UI] textarea focus")}
+              onFocus={() => void 0}
               placeholder={
                 providerKey
                   ? "Write your question. Use Shift+Enter for a new line."

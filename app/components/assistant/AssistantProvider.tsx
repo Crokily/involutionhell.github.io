@@ -152,12 +152,7 @@ export function AssistantProvider({
       abortRef.current = controller;
 
       try {
-        console.log("[assistant] sendMessage start", {
-          provider: settings.providerId,
-          model: getProviderAdapter(settings.providerId).getModel(settings),
-          sendContext: settings.sendContext,
-          historyCount: history.length,
-        });
+        // start streaming
         for await (const chunk of streamWithProvider({
           input,
           history,
@@ -168,7 +163,6 @@ export function AssistantProvider({
           if (!chunk) {
             continue;
           }
-          console.log("[assistant] chunk", chunk);
           setMessages((prev) =>
             prev.map((message) =>
               message.id === assistantMessage.id
@@ -185,7 +179,7 @@ export function AssistantProvider({
           setError(normaliseError(err, settings.providerId));
         }
       } finally {
-        console.log("[assistant] sendMessage end");
+        // streaming finished
         abortRef.current = null;
         setIsStreaming(false);
       }

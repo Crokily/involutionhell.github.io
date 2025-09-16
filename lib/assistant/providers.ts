@@ -104,12 +104,7 @@ export async function* streamWithProvider(
   payload: SendMessagePayload,
 ): StreamGenerator {
   const adapter = getProviderAdapter(payload.settings.providerId);
-  console.log(
-    "[assistant] start stream",
-    adapter.id,
-    "model=",
-    adapter.getModel(payload.settings),
-  );
+  // start provider stream
   yield* adapter.stream(payload);
 }
 
@@ -309,14 +304,9 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
     }
     try {
       const parsed = JSON.parse(trimmed);
-      console.log("[assistant:gemini] parsed line", parsed);
       const texts = extractGeminiTexts(parsed);
-      if (texts.length > 0) {
-        console.log("[assistant:gemini] extracted texts", texts);
-      }
       return texts;
     } catch (error) {
-      console.warn("gemini chunk parse failed", error);
       return [];
     }
   };
@@ -335,17 +325,12 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
         const line = rawLine.replace(/\r$/, "");
         if (!line.startsWith("data:")) continue;
 
-        console.log(
-          "[assistant:gemini] raw event chunk data:",
-          line.replace(/^data:\s*/, ""),
-        );
         const dataPayload = line.replace(/^data:\s*/, "");
         const texts = parseDataPayload(dataPayload);
         if (texts.includes("__DONE__")) {
           return;
         }
         for (const text of texts) {
-          console.log("[assistant:gemini] yield text", text);
           yield text;
         }
       }
@@ -362,7 +347,6 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
       return;
     }
     for (const text of texts) {
-      console.log("[assistant:gemini] yield tail text", text);
       yield text;
     }
   }
