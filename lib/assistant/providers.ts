@@ -296,91 +296,74 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
     throw new Error(`GEMINI_HTTP_${response.status}:${errorText}`);
   }
 
+  // Switch to line-by-line parsing to avoid waiting for "\n\n" event boundaries
   const reader = response.body.getReader();
   const decoder = new TextDecoder();
-  let buffer = "";
+  let lineBuffer = "";
 
-  const handleEvent = (event: string): { done: boolean; texts: string[] } => {
-    console.log("[assistant:gemini] raw event chunk", event);
-    // Parse Server-Sent Events: treat each `data:` line as an individual JSON payload
-    const lines = event
-      .split("\n")
-      .map((line) => line.replace(/\r$/, ""))
-      .filter((line) => line.startsWith("data:"))
-      .map((line) => line.replace(/^data:\s*/, ""));
-
-    if (lines.length === 0) {
-      return { done: false, texts: [] };
+  const parseDataPayload = (payload: string): string[] => {
+    const trimmed = payload.trim();
+    if (!trimmed) return [];
+    if (trimmed === "[DONE]") {
+      return ["__DONE__"];
     }
-
-    const texts: string[] = [];
-    for (const payload of lines) {
-      const trimmed = payload.trim();
-      if (!trimmed) {
-        continue;
+    try {
+      const parsed = JSON.parse(trimmed);
+      console.log("[assistant:gemini] parsed line", parsed);
+      const texts = extractGeminiTexts(parsed);
+      if (texts.length > 0) {
+        console.log("[assistant:gemini] extracted texts", texts);
       }
-      if (trimmed === "[DONE]") {
-        return { done: true, texts };
-      }
-      try {
-        const parsed = JSON.parse(trimmed);
-        console.log("[assistant:gemini] parsed line", parsed);
-        texts.push(...extractGeminiTexts(parsed));
-      } catch (error) {
-        console.warn("gemini chunk parse failed", error);
-      }
+      return texts;
+    } catch (error) {
+      console.warn("gemini chunk parse failed", error);
+      return [];
     }
-    // Fallback: some responses stream a JSON array across multiple data lines
-    // within the same event; if line-by-line parsing produced nothing, try
-    // concatenating and parsing once.
-    if (texts.length === 0) {
-      const joined = lines.join("\n").trim();
-      if (joined && joined !== "[DONE]") {
-        try {
-          const parsed = JSON.parse(joined);
-          console.log("[assistant:gemini] parsed joined", parsed);
-          texts.push(...extractGeminiTexts(parsed));
-        } catch {
-          // ignore final failure; we've already tried per-line parsing
-        }
-      }
-    }
-    if (texts.length > 0) {
-      console.log("[assistant:gemini] extracted texts", texts);
-    }
-    return { done: false, texts };
   };
 
   while (true) {
     const { value, done } = await reader.read();
-    buffer += decoder.decode(value ?? new Uint8Array(), { stream: !done });
-    const events = buffer.split("\n\n");
-    buffer = events.pop() ?? "";
+    const chunkText = decoder.decode(value ?? new Uint8Array(), {
+      stream: !done,
+    });
+    if (chunkText) {
+      lineBuffer += chunkText;
+      const lines = lineBuffer.split("\n");
+      lineBuffer = lines.pop() ?? "";
 
-    for (const event of events) {
-      const result = handleEvent(event);
-      for (const text of result.texts) {
-        console.log("[assistant:gemini] yield text", text);
-        yield text;
-      }
-      if (result.done) {
-        return;
+      for (const rawLine of lines) {
+        const line = rawLine.replace(/\r$/, "");
+        if (!line.startsWith("data:")) continue;
+
+        console.log(
+          "[assistant:gemini] raw event chunk data:",
+          line.replace(/^data:\s*/, ""),
+        );
+        const dataPayload = line.replace(/^data:\s*/, "");
+        const texts = parseDataPayload(dataPayload);
+        if (texts.includes("__DONE__")) {
+          return;
+        }
+        for (const text of texts) {
+          console.log("[assistant:gemini] yield text", text);
+          yield text;
+        }
       }
     }
 
-    if (done) {
-      break;
-    }
+    if (done) break;
   }
 
-  if (buffer) {
-    const result = handleEvent(buffer);
-    for (const text of result.texts) {
+  // Flush any residual last line (without trailing newline)
+  if (lineBuffer.startsWith("data:")) {
+    const dataPayload = lineBuffer.replace(/^data:\s*/, "");
+    const texts = parseDataPayload(dataPayload);
+    if (texts.includes("__DONE__")) {
+      return;
+    }
+    for (const text of texts) {
       console.log("[assistant:gemini] yield tail text", text);
       yield text;
-    }
-    if (result.done) {
-      return;
     }
   }
 }
