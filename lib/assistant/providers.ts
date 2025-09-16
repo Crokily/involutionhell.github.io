@@ -1,4 +1,4 @@
-﻿import type { DocContextPayload } from "@/lib/assistant/context";
+import type { DocContextPayload } from "@/lib/assistant/context";
 import type {
   AssistantMessage,
   AssistantProviderId,
@@ -29,6 +29,24 @@ interface GeminiStreamCandidate {
 
 interface GeminiStreamChunk {
   candidates?: GeminiStreamCandidate[];
+}
+
+// Broader types to avoid using `any` when reading optional delta/content shapes
+interface GeminiDeltaPartContainer {
+  parts?: GeminiContentPart[];
+}
+
+interface GeminiDeltaShape {
+  text?: string;
+  content?: GeminiDeltaPartContainer;
+}
+
+interface GeminiCandidateExtended extends GeminiStreamCandidate {
+  delta?: GeminiDeltaShape;
+}
+
+interface GeminiStreamChunkExtended {
+  candidates?: GeminiCandidateExtended[];
 }
 
 interface ProviderAdapter {
@@ -86,6 +104,12 @@ export async function* streamWithProvider(
   payload: SendMessagePayload,
 ): StreamGenerator {
   const adapter = getProviderAdapter(payload.settings.providerId);
+  console.log(
+    "[assistant] start stream",
+    adapter.id,
+    "model=",
+    adapter.getModel(payload.settings),
+  );
   yield* adapter.stream(payload);
 }
 
@@ -248,7 +272,7 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
     payload.settings.sendContext && Boolean(payload.context.context);
   const systemPrompt = buildSystemPrompt(payload.context, includeContext);
   const model = adapter.getModel(payload.settings);
-  const url = `${GEMINI_STREAM_URL}/models/${model}:streamGenerateContent?key=${encodeURIComponent(apiKey)}`;
+  const url = `${GEMINI_STREAM_URL}/models/${model}:streamGenerateContent?alt=sse&key=${encodeURIComponent(apiKey)}`;
 
   const body = {
     contents: buildGeminiContents(payload.history, payload.input),
@@ -276,45 +300,134 @@ async function* streamGemini(payload: SendMessagePayload): StreamGenerator {
   const decoder = new TextDecoder();
   let buffer = "";
 
-  while (true) {
-    const { value, done } = await reader.read();
-    if (done) {
-      break;
-    }
-    buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() ?? "";
+  const handleEvent = (event: string): { done: boolean; texts: string[] } => {
+    console.log("[assistant:gemini] raw event chunk", event);
+    // Parse Server-Sent Events: treat each `data:` line as an individual JSON payload
+    const lines = event
+      .split("\n")
+      .map((line) => line.replace(/\r$/, ""))
+      .filter((line) => line.startsWith("data:"))
+      .map((line) => line.replace(/^data:\s*/, ""));
 
-    for (const lineRaw of lines) {
-      const line = lineRaw.trim();
-      if (!line) {
+    if (lines.length === 0) {
+      return { done: false, texts: [] };
+    }
+
+    const texts: string[] = [];
+    for (const payload of lines) {
+      const trimmed = payload.trim();
+      if (!trimmed) {
         continue;
       }
-      const payloadString = line.startsWith("data:")
-        ? line.replace(/^data:\s*/, "")
-        : line;
-      if (payloadString === "[DONE]") {
-        return;
+      if (trimmed === "[DONE]") {
+        return { done: true, texts };
       }
       try {
-        const parsed = JSON.parse(payloadString);
-        const text = extractGeminiText(parsed);
-        if (text) {
-          yield text;
-        }
+        const parsed = JSON.parse(trimmed);
+        console.log("[assistant:gemini] parsed line", parsed);
+        texts.push(...extractGeminiTexts(parsed));
       } catch (error) {
         console.warn("gemini chunk parse failed", error);
       }
     }
+    // Fallback: some responses stream a JSON array across multiple data lines
+    // within the same event; if line-by-line parsing produced nothing, try
+    // concatenating and parsing once.
+    if (texts.length === 0) {
+      const joined = lines.join("\n").trim();
+      if (joined && joined !== "[DONE]") {
+        try {
+          const parsed = JSON.parse(joined);
+          console.log("[assistant:gemini] parsed joined", parsed);
+          texts.push(...extractGeminiTexts(parsed));
+        } catch {
+          // ignore final failure; we've already tried per-line parsing
+        }
+      }
+    }
+    if (texts.length > 0) {
+      console.log("[assistant:gemini] extracted texts", texts);
+    }
+    return { done: false, texts };
+  };
+
+  while (true) {
+    const { value, done } = await reader.read();
+    buffer += decoder.decode(value ?? new Uint8Array(), { stream: !done });
+    const events = buffer.split("\n\n");
+    buffer = events.pop() ?? "";
+
+    for (const event of events) {
+      const result = handleEvent(event);
+      for (const text of result.texts) {
+        console.log("[assistant:gemini] yield text", text);
+        yield text;
+      }
+      if (result.done) {
+        return;
+      }
+    }
+
+    if (done) {
+      break;
+    }
+  }
+
+  if (buffer) {
+    const result = handleEvent(buffer);
+    for (const text of result.texts) {
+      console.log("[assistant:gemini] yield tail text", text);
+      yield text;
+    }
+    if (result.done) {
+      return;
+    }
   }
 }
 
-function extractGeminiText(chunk: GeminiStreamChunk): string {
-  const parts = chunk?.candidates?.[0]?.content?.parts;
-  if (!Array.isArray(parts)) {
-    return "";
+function extractGeminiTexts(chunk: unknown): string[] {
+  // Handle both array and single-object payloads produced by Gemini streaming
+  const items = Array.isArray(chunk)
+    ? (chunk as GeminiStreamChunkExtended[])
+    : [chunk as GeminiStreamChunkExtended];
+
+  const texts: string[] = [];
+  for (const item of items) {
+    // 1) Common case: candidates[0].content.parts[].text (final or incremental)
+    const partsA = item?.candidates?.[0]?.content?.parts;
+    if (Array.isArray(partsA)) {
+      const combined = partsA
+        .map((part: GeminiContentPart) =>
+          part && typeof part.text === "string" ? part.text : "",
+        )
+        .join("");
+      if (combined) {
+        texts.push(combined);
+        continue;
+      }
+    }
+
+    // 2) Some incremental variants expose delta under candidates[0].delta or similar
+    const deltaText = item?.candidates?.[0]?.delta?.text;
+    if (typeof deltaText === "string" && deltaText.length > 0) {
+      texts.push(deltaText);
+      continue;
+    }
+
+    const deltaParts = item?.candidates?.[0]?.delta?.content?.parts;
+    if (Array.isArray(deltaParts)) {
+      const combinedDelta = deltaParts
+        .map((part: GeminiContentPart) =>
+          part && typeof part.text === "string" ? part.text : "",
+        )
+        .join("");
+      if (combinedDelta) {
+        texts.push(combinedDelta);
+        continue;
+      }
+    }
   }
-  return parts.map((part: GeminiContentPart) => part?.text ?? "").join("");
+  return texts;
 }
 
 async function safeReadText(response: Response): Promise<string> {
