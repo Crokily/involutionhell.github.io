@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "dark" | "light" | "system";
@@ -58,7 +58,7 @@ export function ThemeProvider({
     }
 
     root.classList.add(theme);
-  }, [theme]);
+  }, [storageKey, theme]);
 
   const value = {
     theme,

@@ -46,3 +46,7 @@ next-env.d.ts
 
 # package管理
 .package-lock.json
+
+# Agents.md
+AGENTS.md
+.code/

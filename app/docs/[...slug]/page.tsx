@@ -3,6 +3,8 @@ import { DocsPage, DocsBody } from "fumadocs-ui/page";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMDXComponents } from "@/mdx-components";
+import { extractDocContext } from "@/lib/assistant/context";
+import { DocAssistantEntry } from "@/app/components/assistant/DocAssistantEntry";
 
 interface Param {
   params: Promise<{
@@ -18,6 +20,7 @@ export default async function DocPage({ params }: Param) {
     notFound();
   }
 
+  const docContext = await extractDocContext(page);
   const Mdx = page.data.body;
 
   return (
@@ -28,6 +31,7 @@ export default async function DocPage({ params }: Param) {
         </h1>
         <Mdx components={getMDXComponents()} />
       </DocsBody>
+      <DocAssistantEntry context={docContext} />
     </DocsPage>
   );
 }
