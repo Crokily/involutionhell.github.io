@@ -62,7 +62,7 @@ function AssistantShell() {
             setDraft("");
           });
         }}
-        className="flex w-full max-w-sm items-center gap-2 rounded-full border border-white/20 bg-zinc-900/85 px-4 py-2 text-zinc-100 shadow-lg shadow-black/40 backdrop-blur"
+        className="flex w-[min(92vw,22rem)] items-center gap-2 rounded-full border border-white/20 bg-zinc-900/85 px-4 py-2 text-zinc-100 shadow-lg shadow-black/40 backdrop-blur"
       >
         <input
           type="text"
@@ -85,7 +85,7 @@ function AssistantShell() {
 
   const expandedPanel = useMemo(
     () => (
-      <div className="w-full max-w-xl rounded-2xl border border-white/15 bg-zinc-950/90 text-zinc-100 shadow-2xl shadow-black/50 backdrop-blur-md">
+      <div className="w-[min(92vw,40rem)] rounded-2xl border border-white/15 bg-zinc-950/90 text-zinc-100 shadow-2xl shadow-black/50 backdrop-blur-md">
         <header className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
           <div className="flex min-w-0 flex-col">
             <span className="text-sm font-semibold text-zinc-100">
@@ -307,8 +307,8 @@ function AssistantShell() {
   );
 
   return (
-    <div className="pointer-events-none fixed bottom-6 left-1/2 z-40 flex w-full justify-center px-4">
-      <div className="pointer-events-auto flex w-full justify-center">
+    <div className="pointer-events-none fixed bottom-4 right-4 z-40 flex max-w-full items-end justify-end md:bottom-6 md:right-6">
+      <div className="pointer-events-auto flex justify-end">
         {expanded ? expandedPanel : collapsedView}
       </div>
     </div>
