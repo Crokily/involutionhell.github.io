@@ -1,0 +1,9 @@
+﻿{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/docs/(.*)", "dest": "/docs/$1" },
+    { "src": "/_next/(.*)", "dest": "/_next/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
