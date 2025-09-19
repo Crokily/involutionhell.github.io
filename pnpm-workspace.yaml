@@ -1,5 +1,8 @@
 packages:
-  - "."
+  - .
 
 onlyBuiltDependencies:
   - esbuild
+
+patchedDependencies:
+  fumadocs-ui: patches/fumadocs-ui.patch

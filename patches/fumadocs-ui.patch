@@ -1,0 +1,16 @@
+diff --git a/dist/layouts/docs/index.js b/dist/layouts/docs/index.js
+index c7d7ecc28e7ebbe1fdbcde7606408d11b84b569c..2e40e81564d1f3cb44b1a8776563683d90071f24 100644
+--- a/dist/layouts/docs/index.js
++++ b/dist/layouts/docs/index.js
+@@ -67,9 +67,9 @@ export function DocsLayout({ nav: { transparentMode, ...nav } = {}, sidebar: { t
+ }
+ function SidebarLinkItem({ item, ...props }) {
+     if (item.type === 'menu')
+-        return (_jsxs(SidebarFolder, { ...props, children: [item.url ? (_jsxs(SidebarFolderLink, { href: item.url, external: item.external, children: [item.icon, item.text] })) : (_jsxs(SidebarFolderTrigger, { children: [item.icon, item.text] })), _jsx(SidebarFolderContent, { children: item.items.map((child, i) => (_jsx(SidebarLinkItem, { item: child }, i))) })] }));
++        return (_jsxs(SidebarFolder, { ...props, children: [item.url ? (_jsxs(SidebarFolderLink, { href: encodeURI(item.url), external: item.external, children: [item.icon, item.text] })) : (_jsxs(SidebarFolderTrigger, { children: [item.icon, item.text] })), _jsx(SidebarFolderContent, { children: item.items.map((child, i) => (_jsx(SidebarLinkItem, { item: child }, i))) })] }));
+     if (item.type === 'custom')
+         return _jsx("div", { ...props, children: item.children });
+-    return (_jsx(SidebarItem, { href: item.url, icon: item.icon, external: item.external, ...props, children: item.text }));
++    return (_jsx(SidebarItem, { href: encodeURI(item.url), icon: item.icon, external: item.external, ...props, children: item.text }));
+ }
+ export { CollapsibleControl, Navbar, SidebarTrigger };
