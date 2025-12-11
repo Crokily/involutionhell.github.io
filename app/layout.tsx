@@ -170,7 +170,7 @@ export default function RootLayout({
             options: { type: "static", api: "/search.json" },
           }}
         >
-          <ThemeProvider defaultTheme="system" storageKey="ih-theme">
+          <ThemeProvider defaultTheme="dark" storageKey="ih-theme">
             <main id="main-content" className="relative z-10">
               {children}
             </main>

@@ -1,25 +1,23 @@
 import { auth } from "@/auth";
 import { NextRequest, NextResponse } from "next/server";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
-import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { sanitizeSlug, validateSlug } from "@/lib/submission";
+import {
+  MAX_IMAGE_UPLOAD_BYTES,
+  isAllowedImageContentType,
+  isExtensionAllowedForContentType,
+  isValidFileSize,
+  sanitizeFilename,
+} from "@/lib/uploads";
+import { createImageUploadPost, createR2Client } from "@/lib/r2";
+import type { AllowedImageContentType } from "@/lib/uploads";
 
-/**
- * R2 配置
- * Cloudflare R2 兼容 S3 API，使用 AWS SDK 连接
- */
-const r2Client = new S3Client({
-  region: "auto",
-  endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
-  credentials: {
-    accessKeyId: process.env.R2_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.R2_SECRET_ACCESS_KEY!,
-  },
-});
+const MAX_OBJECT_KEY_BYTES = 1024;
 
 interface UploadRequest {
   filename: string;
   contentType: string;
   articleSlug: string;
+  fileSize: number;
 }
 
 /**
@@ -28,27 +26,35 @@ interface UploadRequest {
  *   - filename: 文件名
  *   - contentType: 文件 MIME 类型
  *   - articleSlug: 文章 slug（用于组织文件路径）
+ *   - fileSize: 文件大小（字节，用于限制超大上传）
  * @returns NextResponse - 返回 JSON 对象：
- *   - uploadUrl: 预签名上传 URL（用于 PUT 请求）
+ *   - uploadUrl: 预签名上传 URL（用于表单 POST）
+ *   - fields: 需随表单一同提交的字段
  *   - publicUrl: 图片的公开访问 URL
  *   - key: R2 对象键
  */
 export async function POST(request: NextRequest) {
   try {
-    // 验证用户身份
     const session = await auth();
 
     if (!session?.user?.id) {
       return NextResponse.json({ error: "未授权访问" }, { status: 401 });
     }
 
-    // 验证环境变量
+    const {
+      R2_ACCOUNT_ID,
+      R2_ACCESS_KEY_ID,
+      R2_SECRET_ACCESS_KEY,
+      R2_BUCKET_NAME,
+      R2_PUBLIC_URL,
+    } = process.env;
+
     if (
-      !process.env.R2_ACCOUNT_ID ||
-      !process.env.R2_ACCESS_KEY_ID ||
-      !process.env.R2_SECRET_ACCESS_KEY ||
-      !process.env.R2_BUCKET_NAME ||
-      !process.env.R2_PUBLIC_URL
+      !R2_ACCOUNT_ID ||
+      !R2_ACCESS_KEY_ID ||
+      !R2_SECRET_ACCESS_KEY ||
+      !R2_BUCKET_NAME ||
+      !R2_PUBLIC_URL
     ) {
       console.error("R2 环境变量未配置");
       return NextResponse.json(
@@ -57,49 +63,118 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 解析请求体
-    const body = (await request.json()) as UploadRequest;
-    const { filename, contentType, articleSlug } = body;
-
-    // 验证请求参数
-    if (!filename || !contentType || !articleSlug) {
+    let body: UploadRequest;
+    try {
+      body = (await request.json()) as UploadRequest;
+    } catch {
       return NextResponse.json(
-        { error: "缺少必要参数：filename, contentType, articleSlug" },
+        { error: "请求体格式错误：应为 JSON" },
         { status: 400 },
       );
     }
 
-    // 验证文件类型
-    if (!contentType.startsWith("image/")) {
+    const { filename, contentType, articleSlug, fileSize } = body;
+
+    if (
+      typeof filename !== "string" ||
+      typeof contentType !== "string" ||
+      typeof articleSlug !== "string" ||
+      typeof fileSize === "undefined"
+    ) {
       return NextResponse.json(
-        { error: "仅支持图片类型文件" },
+        {
+          error: "缺少必要参数：filename, contentType, articleSlug, fileSize",
+        },
         { status: 400 },
       );
     }
 
-    // 生成唯一的对象键
-    // 格式：users/{userId}/{article-slug}/{timestamp}-{filename}
+    const normalizedContentType = contentType.toLowerCase();
+    const sanitizedSlug = sanitizeSlug(articleSlug);
+    if (!validateSlug(sanitizedSlug) || sanitizedSlug !== articleSlug) {
+      return NextResponse.json(
+        {
+          error:
+            "articleSlug 不符合规范（需为 1-100 位小写字母、数字、连字符或下划线）",
+        },
+        { status: 400 },
+      );
+    }
+
+    if (!isValidFileSize(fileSize)) {
+      return NextResponse.json(
+        {
+          error: `文件大小无效或超过限制（最大 ${
+            MAX_IMAGE_UPLOAD_BYTES / (1024 * 1024)
+          }MB）`,
+        },
+        { status: 400 },
+      );
+    }
+
+    if (!isAllowedImageContentType(normalizedContentType)) {
+      return NextResponse.json(
+        {
+          error: "仅支持图片类型：image/jpeg, image/png, image/gif, image/webp",
+        },
+        { status: 400 },
+      );
+    }
+
+    const sanitizedFilename = sanitizeFilename(filename);
+
+    if (!sanitizedFilename) {
+      return NextResponse.json(
+        {
+          error: "文件名不合法，仅支持字母、数字、., _, -，且不能以 . 开头",
+        },
+        { status: 400 },
+      );
+    }
+
+    if (
+      !isExtensionAllowedForContentType(
+        sanitizedFilename,
+        normalizedContentType,
+      )
+    ) {
+      return NextResponse.json(
+        {
+          error: "文件扩展名与 contentType 不匹配或不受支持",
+        },
+        { status: 400 },
+      );
+    }
+
     const timestamp = Date.now();
     const userId = session.user.id;
-    const key = `users/${userId}/${articleSlug}/${timestamp}-${filename}`;
+    const key = `users/${userId}/${sanitizedSlug}/${timestamp}-${sanitizedFilename}`;
 
-    // 创建 PutObject 命令
-    const command = new PutObjectCommand({
-      Bucket: process.env.R2_BUCKET_NAME,
-      Key: key,
-      ContentType: contentType,
+    if (Buffer.byteLength(key, "utf8") > MAX_OBJECT_KEY_BYTES) {
+      return NextResponse.json(
+        { error: "生成的对象 Key 过长，请缩短文件名或文章 slug" },
+        { status: 400 },
+      );
+    }
+
+    const r2Client = createR2Client({
+      accountId: R2_ACCOUNT_ID,
+      accessKeyId: R2_ACCESS_KEY_ID,
+      secretAccessKey: R2_SECRET_ACCESS_KEY,
     });
 
-    // 生成预签名 URL（15 分钟有效期）
-    const uploadUrl = await getSignedUrl(r2Client, command, {
-      expiresIn: 900,
+    const presignedPost = await createImageUploadPost({
+      client: r2Client,
+      bucket: R2_BUCKET_NAME,
+      key,
+      contentType: normalizedContentType as AllowedImageContentType,
     });
 
-    // 生成公开访问 URL
-    const publicUrl = `${process.env.R2_PUBLIC_URL}/${key}`;
+    const publicUrl = `${R2_PUBLIC_URL}/${key}`;
 
     return NextResponse.json({
-      uploadUrl,
+      uploadUrl: presignedPost.url,
+      fields: presignedPost.fields,
       publicUrl,
       key,
     });

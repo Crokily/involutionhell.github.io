@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
 import { useAISDKRuntime } from "@assistant-ui/react-ai-sdk";
@@ -34,69 +34,44 @@ export function DocsAssistant({ pageContext }: DocsAssistantProps) {
 function DocsAssistantInner({ pageContext }: DocsAssistantProps) {
   const { provider, openaiApiKey, geminiApiKey } = useAssistantSettings();
 
-  // Use refs to ensure we always get the latest values
-  const providerRef = useRef(provider);
-  const openaiApiKeyRef = useRef(openaiApiKey);
-  const geminiApiKeyRef = useRef(geminiApiKey);
+  const transport = useMemo(
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        body: () => {
+          const apiKey =
+            provider === "openai"
+              ? openaiApiKey
+              : provider === "gemini"
+                ? geminiApiKey
+                : ""; // intern provider doesn't need API key
 
-  // Update refs whenever the values change
-  providerRef.current = provider;
-  openaiApiKeyRef.current = openaiApiKey;
-  geminiApiKeyRef.current = geminiApiKey;
+          return { pageContext, provider, apiKey };
+        },
+      }),
+    [geminiApiKey, openaiApiKey, pageContext, provider],
+  );
 
-  const chat = useChat({
-    transport: new DefaultChatTransport({
-      api: "/api/chat",
-      body: () => {
-        // Use refs to get the current values at request time
-        const currentProvider = providerRef.current;
-        const currentApiKey =
-          currentProvider === "openai"
-            ? openaiApiKeyRef.current
-            : currentProvider === "gemini"
-              ? geminiApiKeyRef.current
-              : ""; // intern provider doesn't need API key
-
-        console.log("[DocsAssistant] useChat body function called with:", {
-          provider: currentProvider,
-          apiKeyLength: currentApiKey.length,
-          hasApiKey: currentApiKey.trim().length > 0,
-        });
-
-        return {
-          pageContext,
-          provider: currentProvider,
-          apiKey: currentApiKey,
-        };
-      },
-    }),
-  });
+  const chat = useChat({ transport });
 
   const {
     error: chatError,
     status: chatStatus,
     clearError: clearChatError,
   } = chat;
-  const [assistantError, setAssistantError] =
-    useState<AssistantErrorState | null>(null);
-
-  useEffect(() => {
-    if (!chatError) {
-      return;
-    }
-
-    setAssistantError(deriveAssistantError(chatError, provider));
-    clearChatError();
-  }, [chatError, clearChatError, provider]);
 
   useEffect(() => {
     if (chatStatus === "submitted" || chatStatus === "streaming") {
-      setAssistantError(null);
+      clearChatError();
     }
-  }, [chatStatus]);
+  }, [chatStatus, clearChatError]);
+
+  const assistantError =
+    chatError && chatStatus !== "submitted" && chatStatus !== "streaming"
+      ? deriveAssistantError(chatError, provider)
+      : null;
 
   const handleClearError = useCallback(() => {
-    setAssistantError(null);
     clearChatError();
   }, [clearChatError]);
 

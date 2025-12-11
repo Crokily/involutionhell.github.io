@@ -54,18 +54,6 @@ function* walk(dir) {
 }
 
 /**
- * 将文件路径转换为路由路径
- */
-function toRoutePath(file) {
-  const rel = path.relative(DOCS_DIR, file).split(path.sep).join("/");
-  const base = path.basename(rel);
-  const dir = path.dirname(rel);
-  if (base.toLowerCase() === "index.md") return dir === "." ? "" : dir;
-  const name = base.replace(/\.[^.]+$/, "");
-  return dir === "." ? name : `${dir}/${name}`;
-}
-
-/**
  * 判断文件名（含扩展名）是否为 kebab-case（仅校验主名，不含后缀）
  * 示例：training-loop.png、fig-01-architecture.webp 为合格
  */
@@ -112,7 +100,6 @@ function buildRefs() {
 
 function checkFile(file, refs) {
   const content = fs.readFileSync(file, "utf8");
-  const routePath = toRoutePath(file);
   const baseDir = path.dirname(file);
   const baseName = path.basename(file, path.extname(file));
   const expectedRelPrefix = `./${baseName}.assets/`;

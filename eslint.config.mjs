@@ -1,3 +1,6 @@
+import next from "eslint-config-next";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
 // eslint.config.mjs  ← 推荐直接改成 .mjs，或在 package.json 加 "type":"module"
 import globals from "globals";
 import js from "@eslint/js";
@@ -6,7 +9,10 @@ import reactHooks from "eslint-plugin-react-hooks";
 // 可选：自动删除无用 import
 import unusedImports from "eslint-plugin-unused-imports";
 
-export default [
+const config = [
+  ...next,
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   // 忽略目录（取代 .eslintignore）
   {
     ignores: [
@@ -26,7 +32,6 @@ export default [
       "**/*.min.js",
     ],
   },
-
   // 通用 JS/TS
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
@@ -53,7 +58,6 @@ export default [
       ],
     },
   },
-
   // TypeScript 规则
   ...tseslint.config({
     files: ["**/*.{ts,tsx}"],
@@ -70,7 +74,6 @@ export default [
       ],
     },
   }),
-
   // 单文件豁免：Next 自动生成的 d.ts
   {
     files: ["next-env.d.ts"],
@@ -79,3 +82,5 @@ export default [
     },
   },
 ];
+
+export default config;

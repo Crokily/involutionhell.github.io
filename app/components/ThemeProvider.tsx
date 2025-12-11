@@ -27,24 +27,21 @@ export function ThemeProvider({
   storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
-  // SSR-safe: do not touch localStorage during render
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
-
-  useEffect(() => {
-    // Read persisted theme on client only
-    try {
-      const stored = (
-        typeof window !== "undefined"
-          ? (localStorage.getItem(storageKey) as Theme | null)
-          : null
-      ) as Theme | null;
-      if (stored) {
-        setTheme(stored);
-      }
-    } catch {
-      console.error("Error reading theme from localStorage");
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") {
+      return defaultTheme;
     }
 
+    try {
+      const stored = localStorage.getItem(storageKey) as Theme | null;
+      return stored ?? defaultTheme;
+    } catch {
+      console.error("Error reading theme from localStorage");
+      return defaultTheme;
+    }
+  });
+
+  useEffect(() => {
     const root = window.document.documentElement;
 
     root.classList.remove("light", "dark");
@@ -60,7 +57,7 @@ export function ThemeProvider({
     }
 
     root.classList.add(theme);
-  }, [theme, storageKey]);
+  }, [theme]);
 
   const value = {
     theme,

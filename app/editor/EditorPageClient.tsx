@@ -13,10 +13,17 @@ import Link from "next/link";
 import type { Session } from "next-auth";
 import { buildDocsNewUrl } from "@/lib/github";
 import {
-  FILENAME_PATTERN,
+  MAX_SLUG_LENGTH,
   ensureMarkdownExtension,
+  sanitizeSlug,
   stripMarkdownExtension,
+  validateSlug,
 } from "@/lib/submission";
+import {
+  MAX_IMAGE_UPLOAD_BYTES,
+  isAllowedImageContentType,
+  isExtensionAllowedForContentType,
+} from "@/lib/uploads";
 
 interface EditorPageClientProps {
   session: Session;
@@ -58,6 +65,8 @@ function buildFrontmatter({
   return lines.join("\n");
 }
 
+const MAX_IMAGE_SIZE_MB = MAX_IMAGE_UPLOAD_BYTES / (1024 * 1024);
+
 /**
  * 编辑器页面客户端组件
  * 包含表单、编辑器和发布按钮
@@ -82,6 +91,24 @@ export function EditorPageClient({ session }: EditorPageClientProps) {
     file: File,
     articleSlug: string,
   ): Promise<{ blobUrl: string; publicUrl: string }> => {
+    const contentType = file.type.toLowerCase();
+
+    if (!validateSlug(articleSlug)) {
+      throw new Error("文章 slug 不合法，请检查文件名。");
+    }
+
+    if (!isAllowedImageContentType(contentType)) {
+      throw new Error("仅支持上传 jpg/png/gif/webp 图片。");
+    }
+
+    if (!isExtensionAllowedForContentType(file.name, contentType)) {
+      throw new Error("文件扩展名与图片类型不匹配。");
+    }
+
+    if (file.size <= 0 || file.size > MAX_IMAGE_UPLOAD_BYTES) {
+      throw new Error(`图片大小需在 0 - ${MAX_IMAGE_SIZE_MB}MB 之间。`);
+    }
+
     // 1. 获取预签名 URL
     const response = await fetch("/api/upload", {
       method: "POST",
@@ -90,8 +117,9 @@ export function EditorPageClient({ session }: EditorPageClientProps) {
       },
       body: JSON.stringify({
         filename: file.name,
-        contentType: file.type,
+        contentType,
         articleSlug,
+        fileSize: file.size,
       }),
     });
 
@@ -100,15 +128,26 @@ export function EditorPageClient({ session }: EditorPageClientProps) {
       throw new Error(error.error || "获取上传链接失败");
     }
 
-    const { uploadUrl, publicUrl } = await response.json();
+    const { uploadUrl, publicUrl, fields } = (await response.json()) as {
+      uploadUrl: string;
+      publicUrl: string;
+      fields: Record<string, string>;
+    };
+
+    if (!uploadUrl || !fields) {
+      throw new Error("上传参数缺失，请稍后重试。");
+    }
 
     // 2. 上传文件到 R2
+    const formData = new FormData();
+    Object.entries(fields).forEach(([field, value]) => {
+      formData.append(field, value);
+    });
+    formData.append("file", file);
+
     const uploadResponse = await fetch(uploadUrl, {
-      method: "PUT",
-      headers: {
-        "Content-Type": file.type,
-      },
-      body: file,
+      method: "POST",
+      body: formData,
     });
 
     if (!uploadResponse.ok) {
@@ -139,8 +178,16 @@ export function EditorPageClient({ session }: EditorPageClientProps) {
 
       const normalizedFilename = ensureMarkdownExtension(filename);
       const filenameBase = stripMarkdownExtension(normalizedFilename);
-      if (!filenameBase || !FILENAME_PATTERN.test(filenameBase)) {
-        alert("文件名仅支持英文、数字、连字符或下划线，并需以字母或数字开头。");
+      const articleSlug = sanitizeSlug(filenameBase);
+
+      if (
+        !articleSlug ||
+        !validateSlug(articleSlug) ||
+        articleSlug !== filenameBase
+      ) {
+        alert(
+          `文件名仅支持英文、数字、连字符或下划线，并需以字母或数字开头且不超过 ${MAX_SLUG_LENGTH} 个字符。`,
+        );
         return;
       }
 
@@ -166,9 +213,7 @@ export function EditorPageClient({ session }: EditorPageClientProps) {
       console.log("文件名:", normalizedFilename);
       console.log("投稿目录:", destinationPath);
       console.log("图片数量:", imageCount);
-
       let finalMarkdown = markdown;
-      const articleSlug = filenameBase;
 
       // 如果有图片，上传到 R2 并替换 URL
       const editorHandle = editorRef.current;

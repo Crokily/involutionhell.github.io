@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface LicenseNoticeProps {
@@ -19,44 +20,36 @@ export function LicenseNotice({ className }: LicenseNoticeProps) {
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
         CC BY-NC-SA 4.0
       </a>
-      <img
+      <Image
         src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-        alt=""
-        style={{
-          maxWidth: "1em",
-          maxHeight: "1em",
-          marginLeft: "0.2em",
-        }}
+        alt="Creative Commons"
+        width={16}
+        height={16}
+        className="ml-[0.2em] inline-block h-4 w-4"
         loading="lazy"
       />
-      <img
+      <Image
         src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-        alt=""
-        style={{
-          maxWidth: "1em",
-          maxHeight: "1em",
-          marginLeft: "0.2em",
-        }}
+        alt="Creative Commons BY"
+        width={16}
+        height={16}
+        className="ml-[0.2em] inline-block h-4 w-4"
         loading="lazy"
       />
-      <img
+      <Image
         src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
-        alt=""
-        style={{
-          maxWidth: "1em",
-          maxHeight: "1em",
-          marginLeft: "0.2em",
-        }}
+        alt="Creative Commons Non-Commercial"
+        width={16}
+        height={16}
+        className="ml-[0.2em] inline-block h-4 w-4"
         loading="lazy"
       />
-      <img
+      <Image
         src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-        alt=""
-        style={{
-          maxWidth: "1em",
-          maxHeight: "1em",
-          marginLeft: "0.2em",
-        }}
+        alt="Creative Commons Share Alike"
+        width={16}
+        height={16}
+        className="ml-[0.2em] inline-block h-4 w-4"
         loading="lazy"
       />
     </p>

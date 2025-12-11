@@ -158,7 +158,7 @@ function moveForFile(file, refs) {
       // 优先使用 rename，提高效率；跨卷失败则回退为 copy+unlink
       try {
         fs.renameSync(src, dest);
-      } catch (e) {
+      } catch {
         try {
           fs.copyFileSync(src, dest);
           fs.unlinkSync(src);
@@ -203,7 +203,7 @@ function moveForFile(file, refs) {
     } else {
       try {
         fs.renameSync(absSrc, dest);
-      } catch (e) {
+      } catch {
         try {
           fs.copyFileSync(absSrc, dest);
           fs.unlinkSync(absSrc);

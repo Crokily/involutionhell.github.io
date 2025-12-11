@@ -1,8 +1,8 @@
 {
   "repo": "InvolutionHell/involutionhell",
-  "generatedAt": "2025-11-16T10:52:51.362Z",
+  "generatedAt": "2025-12-10T03:07:16.426Z",
   "docsDir": "app/docs",
-  "totalDocs": 115,
+  "totalDocs": 138,
   "results": [
     {
       "docId": "ue27z7z95yzw3lhhfj7nit1c",
@@ -53,23 +53,6 @@
           "login": "longsizhuo",
           "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
           "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
-    },
-    {
-      "docId": "vesefhhnj2ebu2oafxa3qmcg",
-      "path": "app/docs/ai/agents-todo/testmd.md",
-      "contributorStats": {
-        "7187663": 1
-      },
-      "contributors": [
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-11-16T10:48:15.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
         }
       ]
     },
@@ -2035,6 +2018,57 @@
       ]
     },
     {
+      "docId": "w9ffo1wycpbz50051cb7lyo5",
+      "path": "app/docs/CommunityShare/Leetcode/[121]买卖股票的最佳时期_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-17T03:05:46.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "jcqhknk5z2xr3rfqn49me4j9",
+      "path": "app/docs/CommunityShare/Leetcode/[1333]餐厅过滤器_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-19T03:06:18.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "u0szm4sv8mr3on3ivbfo5r84",
+      "path": "app/docs/CommunityShare/Leetcode/[146]LRU 缓存_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-12-08T03:06:11.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
       "docId": "rv6egbynttb4mt1n0412bue0",
       "path": "app/docs/CommunityShare/Leetcode/[213]打家劫舍 II_translated.md",
       "contributorStats": {
@@ -2045,6 +2079,40 @@
           "githubId": "114939201",
           "contributions": 2,
           "lastContributedAt": "2025-11-14T03:05:55.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "pe6o8l76945uo7aqv79ddhii",
+      "path": "app/docs/CommunityShare/Leetcode/[2490]回环句_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-12-07T17:03:33.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "p9gvb8klqv990cq88j4l76zy",
+      "path": "app/docs/CommunityShare/Leetcode/[2582]递枕头_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-12-03T03:07:04.000Z",
           "login": "longsizhuo",
           "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
           "htmlUrl": "https://github.com/longsizhuo"
@@ -2086,6 +2154,23 @@
       ]
     },
     {
+      "docId": "ylpucy1rbbnfpe3t62u8kcfq",
+      "path": "app/docs/CommunityShare/Leetcode/142.环形链表II_translated.md",
+      "contributorStats": {
+        "114939201": 4
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 4,
+          "lastContributedAt": "2025-12-07T17:46:06.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
       "docId": "bsf0yz1zrmlz7masrdmq8fq6",
       "path": "app/docs/CommunityShare/Leetcode/1653. 使字符串平衡的最少删除次数_translated.md",
       "contributorStats": {
@@ -2096,6 +2181,74 @@
           "githubId": "114939201",
           "contributions": 2,
           "lastContributedAt": "2025-11-12T03:05:32.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "chb8ee5s38v8gh751n9e5znj",
+      "path": "app/docs/CommunityShare/Leetcode/1828统计一个圆中点的数目_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-26T03:06:33.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "ksw2vic4alf1tdnnueay81g8",
+      "path": "app/docs/CommunityShare/Leetcode/2131. 连接两字母单词得到的最长回文串.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-12-01T03:07:27.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "k4btd9x3l3xnnl4dnr64d8cq",
+      "path": "app/docs/CommunityShare/Leetcode/219_translated.md",
+      "contributorStats": {
+        "114939201": 1
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 1,
+          "lastContributedAt": "2025-12-10T03:00:13.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "lzrh7ftq3kegsyx8gimonrfu",
+      "path": "app/docs/CommunityShare/Leetcode/2241. Design an ATM Machine.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-23T03:05:40.000Z",
           "login": "longsizhuo",
           "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
           "htmlUrl": "https://github.com/longsizhuo"
@@ -2120,6 +2273,91 @@
       ]
     },
     {
+      "docId": "mssz5wgh368yp55qcvs1op5e",
+      "path": "app/docs/CommunityShare/Leetcode/2293_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-22T03:06:03.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "fxn6bn619g3a9l98l9vggpg1",
+      "path": "app/docs/CommunityShare/Leetcode/2299强密码检验器II_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-21T03:05:08.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "mc2rjsq7syibclikyhomsbft",
+      "path": "app/docs/CommunityShare/Leetcode/2309兼具大小写的最好英文字母_translated.md",
+      "contributorStats": {
+        "114939201": 3
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 3,
+          "lastContributedAt": "2025-12-05T06:03:22.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "hiqhki2z4v6oy0jstrcs7im0",
+      "path": "app/docs/CommunityShare/Leetcode/2335. 装满杯子需要的最短总时长_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-29T03:05:49.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "lnx1bszj5aqqqfa50sejjv7n",
+      "path": "app/docs/CommunityShare/Leetcode/2639. 查询网格图中每一列的宽度_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-12-09T03:06:49.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
       "docId": "clx9mmqqvxipdfamqciuo146",
       "path": "app/docs/CommunityShare/Leetcode/2679.矩阵中的和_translated.md",
       "contributorStats": {
@@ -2137,6 +2375,91 @@
       ]
     },
     {
+      "docId": "r12u8o7j73oxhbvgphi939fb",
+      "path": "app/docs/CommunityShare/Leetcode/3072. 将元素分配到两个数组中 II_translated.md",
+      "contributorStats": {
+        "114939201": 3
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 3,
+          "lastContributedAt": "2025-12-07T17:46:06.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "udm0daiek9dr22xq4doep5w4",
+      "path": "app/docs/CommunityShare/Leetcode/345. 反转字符串中的元音字母_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-18T03:06:33.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "mxt0ux1zpbzph4nuxz51eyg7",
+      "path": "app/docs/CommunityShare/Leetcode/46.全排列.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-25T03:06:13.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "wen0bbo8m93oih1mx6sva9sh",
+      "path": "app/docs/CommunityShare/Leetcode/538.把二叉搜索树转换为累加树_translated.md",
+      "contributorStats": {
+        "114939201": 3
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 3,
+          "lastContributedAt": "2025-12-07T17:46:06.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "kw44if3s2zi4w2gs1gfhxvoz",
+      "path": "app/docs/CommunityShare/Leetcode/6323. 将钱分给最多的儿童_translated.md",
+      "contributorStats": {
+        "114939201": 3
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 3,
+          "lastContributedAt": "2025-12-07T17:46:06.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
       "docId": "ryp6s59uwc10w2dywgs6f66h",
       "path": "app/docs/CommunityShare/Leetcode/80_translated.md",
       "contributorStats": {
@@ -2147,6 +2470,74 @@
           "githubId": "114939201",
           "contributions": 2,
           "lastContributedAt": "2025-11-11T03:04:31.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "s0cadbu09dgu54q0zxttkx7z",
+      "path": "app/docs/CommunityShare/Leetcode/9021_TUT_3_25T1.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-27T03:05:29.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "d5evrnoglwjvmyginjq84bl0",
+      "path": "app/docs/CommunityShare/Leetcode/93复原Ip地址.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-24T03:05:26.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "axhoyzdtxoc82q58j1os57c8",
+      "path": "app/docs/CommunityShare/Leetcode/994.腐烂的橘子_translated.md",
+      "contributorStats": {
+        "114939201": 3
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 3,
+          "lastContributedAt": "2025-12-07T17:46:06.000Z",
+          "login": "longsizhuo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
+          "htmlUrl": "https://github.com/longsizhuo"
+        }
+      ]
+    },
+    {
+      "docId": "one7va4e0hvbq1eqhm6ww2kd",
+      "path": "app/docs/CommunityShare/Leetcode/brief_alternate 作业帮忙_translated.md",
+      "contributorStats": {
+        "114939201": 2
+      },
+      "contributors": [
+        {
+          "githubId": "114939201",
+          "contributions": 2,
+          "lastContributedAt": "2025-11-20T03:05:05.000Z",
           "login": "longsizhuo",
           "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
           "htmlUrl": "https://github.com/longsizhuo"

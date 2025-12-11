@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Github, MessageCircle, ExternalLink } from "lucide-react";
 import { BrandMark } from "./BrandMark";
 import { LicenseNotice } from "./LicenseNotice";
@@ -47,13 +48,13 @@ export function Footer() {
             <h3 className="font-semibold mb-4">快速链接</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/docs/ai"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
                 >
                   知识库
                   <ExternalLink className="ml-1 h-3 w-3" aria-hidden="true" />
-                </a>
+                </Link>
               </li>
               <li>
                 <a

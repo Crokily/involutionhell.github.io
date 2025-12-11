@@ -20,7 +20,12 @@ import { useRouter } from "next/navigation";
 import { TreeSelect } from "antd";
 import { DataNode } from "antd/es/tree";
 import { buildDocsNewUrl } from "@/lib/github";
-import { type DirNode, FILENAME_PATTERN } from "@/lib/submission";
+import {
+  MAX_SLUG_LENGTH,
+  sanitizeSlug,
+  type DirNode,
+  validateSlug,
+} from "@/lib/submission";
 import {
   CREATE_SUBDIR_SUFFIX,
   toTreeSelectData,
@@ -60,6 +65,10 @@ export function Contribute() {
   const [articleFileTouched, setArticleFileTouched] = useState(false);
 
   const trimmedArticleFile = useMemo(() => articleFile.trim(), [articleFile]);
+  const sanitizedArticleFile = useMemo(
+    () => sanitizeSlug(trimmedArticleFile),
+    [trimmedArticleFile],
+  );
   const { isFileNameValid, fileNameError } = useMemo(() => {
     if (!trimmedArticleFile) {
       return {
@@ -67,14 +76,20 @@ export function Contribute() {
         fileNameError: "请填写文件名。",
       };
     }
-    if (!FILENAME_PATTERN.test(trimmedArticleFile)) {
+    if (!validateSlug(sanitizedArticleFile)) {
       return {
         isFileNameValid: false,
-        fileNameError: "文件名仅支持英文、数字、连字符或下划线。",
+        fileNameError: `文件名仅支持英文、数字、连字符或下划线（最长 ${MAX_SLUG_LENGTH} 个字符）。`,
+      };
+    }
+    if (sanitizedArticleFile !== trimmedArticleFile) {
+      return {
+        isFileNameValid: false,
+        fileNameError: `请使用规范化后的文件名：${sanitizedArticleFile}`,
       };
     }
     return { isFileNameValid: true, fileNameError: "" };
-  }, [trimmedArticleFile]);
+  }, [sanitizedArticleFile, trimmedArticleFile]);
 
   useEffect(() => {
     let mounted = true;
@@ -98,22 +113,23 @@ export function Contribute() {
   }, []);
 
   const options = useMemo(() => toTreeSelectData(tree), [tree]);
+  const sanitizedSubdir = useMemo(() => sanitizeSlug(newSub), [newSub]);
 
   const finalDirPath = useMemo(() => {
     if (!selectedKey) return "";
     if (selectedKey.endsWith(CREATE_SUBDIR_SUFFIX)) {
       const l1 = selectedKey.split("/")[0];
-      if (!newSub.trim()) return "";
-      return `${l1}/${newSub.trim().replace(/\s+/g, "-")}`;
+      if (!sanitizedSubdir) return "";
+      return `${l1}/${sanitizedSubdir}`;
     }
     return selectedKey;
-  }, [selectedKey, newSub]);
+  }, [sanitizedSubdir, selectedKey]);
 
   const canProceed = !!finalDirPath && isFileNameValid;
 
   const handleOpenGithub = () => {
     if (!canProceed) return;
-    const filename = trimmedArticleFile.toLowerCase();
+    const filename = sanitizedArticleFile;
     const title = articleTitle || filename;
     window.open(
       buildGithubNewUrl(finalDirPath, filename, title),
