@@ -1,6 +1,6 @@
 {
   "repo": "InvolutionHell/involutionhell",
-  "generatedAt": "2026-02-26T14:40:02.963Z",
+  "generatedAt": "2026-03-04T10:11:25.124Z",
   "docsDir": "app/docs",
   "totalDocs": 146,
   "results": [
@@ -1525,2055 +1525,536 @@
     {
       "docId": "c3a4nmid9plytif5ameigj7d",
       "path": "app/docs/ai/recommender-systems/wangshusen_recommend_note/wangshusen_recommend_note_retrieval.mdx",
-      "contributorStats": {
-        "114939201": 2,
-        "163523387": 1,
-        "188854497": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "188854497",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-22T00:58:31.000Z",
-          "login": "0dysseus13",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/188854497?v=4",
-          "htmlUrl": "https://github.com/0dysseus13"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-24T23:29:45.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "s4fuhmdf6hj49jx1l7k87d4p",
       "path": "app/docs/ai/reinforcement-learning/reinforcement-learning-overview.mdx",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-17T23:05:47.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "bkxwg1m9p9rnm8062wsm020w",
       "path": "app/docs/all-projects/ai-town.mdx",
-      "contributorStats": {
-        "163523387": 3
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-25T02:03:09.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ifwz8sqxqsgjrafa79pycrcm",
       "path": "app/docs/all-projects/multimodal-rl.mdx",
-      "contributorStats": {
-        "114939201": 1,
-        "150361711": 1,
-        "163523387": 3
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-25T02:03:09.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-27T18:01:38.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "150361711",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-17T10:15:30.000Z",
-          "login": "mojitote",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/150361711?v=4",
-          "htmlUrl": "https://github.com/mojitote"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mgb41edhi9cz1kxzae074an0",
       "path": "app/docs/CommunityShare/Amazing-AI-Tools/index.md",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-03T13:14:06.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "eej2awin6irhbdgcy8vvs3xb",
       "path": "app/docs/CommunityShare/Amazing-AI-Tools/perplexity-comet.md",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-03T13:14:06.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "gj4bn01un0s0841berfvwrn5",
       "path": "app/docs/CommunityShare/Geek/cloudflare-r2-sharex-free-image-hosting.mdx",
-      "contributorStats": {
-        "114939201": 1,
-        "194795025": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "194795025",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-27T05:22:14.000Z",
-          "login": "LynPtl",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/194795025?v=4",
-          "htmlUrl": "https://github.com/LynPtl"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "xqz5iiv3p52h6d9g3c0w2baf",
       "path": "app/docs/CommunityShare/Geek/CommonUsedMarkdown.md",
-      "contributorStats": {
-        "73457237": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-20T05:09:13.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "tksz80mfqqyzwzzer5p3uxtg",
       "path": "app/docs/CommunityShare/Geek/git101.mdx",
-      "contributorStats": {
-        "88451018": 1,
-        "114939201": 2,
-        "163523387": 3
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-15T04:14:47.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-26T19:10:57.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "88451018",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-15T03:17:10.000Z",
-          "login": "richardkkk",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/88451018?v=4",
-          "htmlUrl": "https://github.com/richardkkk"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "jee9yt8n8tmo8yclqujerw2x",
       "path": "app/docs/CommunityShare/Geek/index.mdx",
-      "contributorStats": {
-        "73457237": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-18T10:22:50.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "yxd2qpfl2li6092bjx8bz7vb",
       "path": "app/docs/CommunityShare/Geek/Katex/index.mdx",
-      "contributorStats": {
-        "73457237": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-20T05:09:13.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "r0inttjcby48tly602p410vo",
       "path": "app/docs/CommunityShare/Geek/Katex/Seb1.mdx",
-      "contributorStats": {
-        "73457237": 2,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "73457237",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-20T05:15:02.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "khcrztruqdku9fntd3dwzvwe",
       "path": "app/docs/CommunityShare/Geek/Katex/Seb2.mdx",
-      "contributorStats": {
-        "73457237": 2,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "73457237",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-20T05:15:02.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "e6udpzrorhvgeeda6xpy1e0s",
       "path": "app/docs/CommunityShare/Geek/picturecdn.mdx",
-      "contributorStats": {
-        "59130571": 2,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "59130571",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-27T07:16:02.000Z",
-          "login": "RavenCaffeine",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/59130571?v=4",
-          "htmlUrl": "https://github.com/RavenCaffeine"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "i0xmpskau105p83vq35wnxls",
       "path": "app/docs/CommunityShare/Geek/raspberry-guide.md",
-      "contributorStats": {
-        "73457237": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-25T19:13:29.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-18T10:22:50.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mhyoknm6vj8jmp186oli5f5c",
       "path": "app/docs/CommunityShare/Geek/swanlab.mdx",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-23T23:30:07.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "sfzt30mtx0jsuv6esnpm3w8y",
       "path": "app/docs/CommunityShare/index.mdx",
-      "contributorStats": {
-        "73457237": 2,
-        "114939201": 1,
-        "194795025": 1
-      },
-      "contributors": [
-        {
-          "githubId": "73457237",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-18T10:22:50.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "194795025",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-21T11:31:51.000Z",
-          "login": "LynPtl",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/194795025?v=4",
-          "htmlUrl": "https://github.com/LynPtl"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "m37j6a24hb9mlrm0g6jfcxop",
       "path": "app/docs/CommunityShare/Language/pte-intro.md",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 4
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 4,
-          "lastContributedAt": "2025-10-17T04:26:38.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "w9ffo1wycpbz50051cb7lyo5",
       "path": "app/docs/CommunityShare/Leetcode/[121]买卖股票的最佳时期_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-17T03:05:46.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "jcqhknk5z2xr3rfqn49me4j9",
       "path": "app/docs/CommunityShare/Leetcode/[1333]餐厅过滤器_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-19T03:06:18.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "u0szm4sv8mr3on3ivbfo5r84",
       "path": "app/docs/CommunityShare/Leetcode/[146]LRU 缓存_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-08T03:06:11.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "rv6egbynttb4mt1n0412bue0",
       "path": "app/docs/CommunityShare/Leetcode/[213]打家劫舍 II_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-14T03:05:55.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "pe6o8l76945uo7aqv79ddhii",
       "path": "app/docs/CommunityShare/Leetcode/[2490]回环句_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-07T17:03:33.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "naxatag8x2nnvkhbwdfc1azc",
       "path": "app/docs/CommunityShare/Leetcode/[2562]找出数组的串联值_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-17T03:05:54.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "p9gvb8klqv990cq88j4l76zy",
       "path": "app/docs/CommunityShare/Leetcode/[2582]递枕头_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-03T03:07:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ytg2bds2dnhzw37nrb3vassy",
       "path": "app/docs/CommunityShare/Leetcode/1004_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-16T03:05:57.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "p8igr19xfxnuyo2lpngnr6fg",
       "path": "app/docs/CommunityShare/Leetcode/1234. 替换子串得到平衡字符串_translated.md",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 4
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 4,
-          "lastContributedAt": "2025-11-09T13:41:11.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-11-16T14:07:23.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ylpucy1rbbnfpe3t62u8kcfq",
       "path": "app/docs/CommunityShare/Leetcode/142.环形链表II_translated.md",
-      "contributorStats": {
-        "114939201": 4
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 4,
-          "lastContributedAt": "2025-12-07T17:46:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "bsf0yz1zrmlz7masrdmq8fq6",
       "path": "app/docs/CommunityShare/Leetcode/1653. 使字符串平衡的最少删除次数_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-12T03:05:32.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ska0npc89ja1r4pdt2qow79u",
       "path": "app/docs/CommunityShare/Leetcode/1664生成平衡数组的方案数_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-18T03:07:57.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "n38sohi8zlxesl82tgv854kj",
       "path": "app/docs/CommunityShare/Leetcode/1825求出 MK 平均值_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-14T03:05:43.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "chb8ee5s38v8gh751n9e5znj",
       "path": "app/docs/CommunityShare/Leetcode/1828统计一个圆中点的数目_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-26T03:06:33.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ksw2vic4alf1tdnnueay81g8",
       "path": "app/docs/CommunityShare/Leetcode/2131. 连接两字母单词得到的最长回文串.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-01T03:07:27.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "k4btd9x3l3xnnl4dnr64d8cq",
       "path": "app/docs/CommunityShare/Leetcode/219_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-10T03:07:17.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "lzrh7ftq3kegsyx8gimonrfu",
       "path": "app/docs/CommunityShare/Leetcode/2241. Design an ATM Machine.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-23T03:05:40.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "a6inw303oslb7i5tcqj5xxx4",
       "path": "app/docs/CommunityShare/Leetcode/2270. Number of Ways to Split Array.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-13T03:06:21.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mssz5wgh368yp55qcvs1op5e",
       "path": "app/docs/CommunityShare/Leetcode/2293_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-22T03:06:03.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "fxn6bn619g3a9l98l9vggpg1",
       "path": "app/docs/CommunityShare/Leetcode/2299强密码检验器II_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-21T03:05:08.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mc2rjsq7syibclikyhomsbft",
       "path": "app/docs/CommunityShare/Leetcode/2309兼具大小写的最好英文字母_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-12-05T06:03:22.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "hiqhki2z4v6oy0jstrcs7im0",
       "path": "app/docs/CommunityShare/Leetcode/2335. 装满杯子需要的最短总时长_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-29T03:05:49.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "s3w19zdm6yhkhj4o0ba3kbal",
       "path": "app/docs/CommunityShare/Leetcode/2341. 数组能形成多少数对_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-13T03:06:53.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "lnx1bszj5aqqqfa50sejjv7n",
       "path": "app/docs/CommunityShare/Leetcode/2639. 查询网格图中每一列的宽度_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-09T03:06:49.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "clx9mmqqvxipdfamqciuo146",
       "path": "app/docs/CommunityShare/Leetcode/2679.矩阵中的和_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-09T14:18:38.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "y0ntwlksnvj7ymuapqvkvmwr",
       "path": "app/docs/CommunityShare/Leetcode/2894. 分类求和并作差.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-12T03:07:58.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "r12u8o7j73oxhbvgphi939fb",
       "path": "app/docs/CommunityShare/Leetcode/3072. 将元素分配到两个数组中 II_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-12-07T17:46:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "o3knuvbpnki6isfjv3g5ohau",
       "path": "app/docs/CommunityShare/Leetcode/3138. Minimum Length of Anagram Concatenation.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-16T03:06:39.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "udm0daiek9dr22xq4doep5w4",
       "path": "app/docs/CommunityShare/Leetcode/345. 反转字符串中的元音字母_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-18T03:06:33.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "jv8qj3ljyr2uomaehnv0l77k",
       "path": "app/docs/CommunityShare/Leetcode/42.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-12-11T03:06:10.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mxt0ux1zpbzph4nuxz51eyg7",
       "path": "app/docs/CommunityShare/Leetcode/46.全排列.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-25T03:06:13.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "wen0bbo8m93oih1mx6sva9sh",
       "path": "app/docs/CommunityShare/Leetcode/538.把二叉搜索树转换为累加树_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-12-07T17:46:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "kw44if3s2zi4w2gs1gfhxvoz",
       "path": "app/docs/CommunityShare/Leetcode/6323. 将钱分给最多的儿童_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-12-07T17:46:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "l358imxaj1mmtth6dydvu54s",
       "path": "app/docs/CommunityShare/Leetcode/76最小覆盖子串_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2026-01-10T09:31:08.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ryp6s59uwc10w2dywgs6f66h",
       "path": "app/docs/CommunityShare/Leetcode/80_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-11T03:04:31.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "s0cadbu09dgu54q0zxttkx7z",
       "path": "app/docs/CommunityShare/Leetcode/9021_TUT_3_25T1.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-27T03:05:29.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "d5evrnoglwjvmyginjq84bl0",
       "path": "app/docs/CommunityShare/Leetcode/93复原Ip地址.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-24T03:05:26.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "axhoyzdtxoc82q58j1os57c8",
       "path": "app/docs/CommunityShare/Leetcode/994.腐烂的橘子_translated.md",
-      "contributorStats": {
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-12-07T17:46:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "one7va4e0hvbq1eqhm6ww2kd",
       "path": "app/docs/CommunityShare/Leetcode/brief_alternate 作业帮忙_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-20T03:05:05.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "fostlzqqx6l10qz1egd8dw5m",
       "path": "app/docs/CommunityShare/Leetcode/Counting Stars-Inter-Uni Programming Contest.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-15T03:07:06.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "qfvqmc1exp066falnsg97c5m",
       "path": "app/docs/CommunityShare/Leetcode/剑指 Offer II 021. 删除链表的倒数第 n 个结点_translated.md",
-      "contributorStats": {
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-10T03:06:23.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "jgyg6bp0nceyrxirz5qw3zsv",
       "path": "app/docs/CommunityShare/Life/unsw-student-benefit.md",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 2
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-03T06:25:47.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "q8d1j9bii2ve2p7pp4xtok79",
       "path": "app/docs/CommunityShare/MentalHealth/burnout-guide.mdx",
-      "contributorStats": {
-        "73457237": 1,
-        "95595902": 1,
-        "114939201": 1,
-        "147322547": 1
-      },
-      "contributors": [
-        {
-          "githubId": "147322547",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-14T07:38:40.000Z",
-          "login": "LunaHeluo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/147322547?v=4",
-          "htmlUrl": "https://github.com/LunaHeluo"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "95595902",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T02:44:25.000Z",
-          "login": "YBJ0000",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/95595902?v=4",
-          "htmlUrl": "https://github.com/YBJ0000"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-18T10:22:50.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "rxyvvumcvfl2oh3hky8urkfn",
       "path": "app/docs/CommunityShare/MentalHealth/index.mdx",
-      "contributorStats": {
-        "73457237": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-18T10:22:50.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "zf8zk108oqbsg56xjyqb5txk",
       "path": "app/docs/CommunityShare/Personal-Study-Notes/Reinforcement-Learning/ppo.md",
-      "contributorStats": {
-        "114939201": 1,
-        "206296353": 4
-      },
-      "contributors": [
-        {
-          "githubId": "206296353",
-          "contributions": 4,
-          "lastContributedAt": "2025-10-03T11:54:29.000Z",
-          "login": "codemanQAQ",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/206296353?v=4",
-          "htmlUrl": "https://github.com/codemanQAQ"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "wdqqrepoy43jiieyyjmaekk1",
       "path": "app/docs/CommunityShare/RAG/context_engineering_intro.md",
-      "contributorStats": {
-        "7187663": 2,
-        "114939201": 1,
-        "166212872": 1
-      },
-      "contributors": [
-        {
-          "githubId": "7187663",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-03T12:25:49.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "166212872",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-03T11:36:59.000Z",
-          "login": "yoyofancy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/166212872?v=4",
-          "htmlUrl": "https://github.com/yoyofancy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "eyd32o3ebd5q69hfbb2enxqi",
       "path": "app/docs/CommunityShare/RAG/embedding.mdx",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-22T01:12:46.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "zywri1bs64awfi9utfjy14ll",
       "path": "app/docs/CommunityShare/RAG/rag.mdx",
-      "contributorStats": {
-        "59130571": 1,
-        "114939201": 1,
-        "163523387": 1,
-        "166212872": 2
-      },
-      "contributors": [
-        {
-          "githubId": "166212872",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-19T13:27:44.000Z",
-          "login": "yoyofancy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/166212872?v=4",
-          "htmlUrl": "https://github.com/yoyofancy"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-19T14:38:16.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "59130571",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-19T14:13:29.000Z",
-          "login": "RavenCaffeine",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/59130571?v=4",
-          "htmlUrl": "https://github.com/RavenCaffeine"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "totx4pej5lhyt1nl4anwhakj",
       "path": "app/docs/computer-science/cpp_backend/easy_compile/1_cpp_libs.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "kyu85av71b4n07hbdycbhvj9",
       "path": "app/docs/computer-science/cpp_backend/easy_compile/2_base_gcc.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-25T19:13:29.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "g6wucmr69lamd9xyxm7uunnd",
       "path": "app/docs/computer-science/cpp_backend/easy_compile/3_Make.md",
-      "contributorStats": {
-        "7187663": 1,
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T11:49:26.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "xk44lx4q1gpcm1uqk8nnbg7q",
       "path": "app/docs/computer-science/cpp_backend/easy_compile/4_CMake.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "gtqamuq3tftmvzstbunkgbo5",
       "path": "app/docs/computer-science/cpp_backend/easy_compile/5_vcpkg.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "mnjkrtrs7xk3fq538eqreuge",
       "path": "app/docs/computer-science/cpp_backend/Handwritten_pool_components/1_Handwritten_threadpool.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "xgxqqvglxyauoeh8eye7lzu6",
       "path": "app/docs/computer-science/cpp_backend/Handwritten_pool_components/2_Handwritten_mempool1.md",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-30T07:08:38.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "q8290wmhyofuiskzn1ph63ta",
       "path": "app/docs/computer-science/cpp_backend/mempool_simple.mdx",
-      "contributorStats": {
-        "100033202": 1,
-        "114939201": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "100033202",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-27T14:18:03.000Z",
-          "login": "duang3457",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/100033202?v=4",
-          "htmlUrl": "https://github.com/duang3457"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "gmpls10e2dz0bbizotvhglc8",
       "path": "app/docs/computer-science/data-structures/array/01-static-array.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "nuojcaq1s6r5nggul0uq3r3j",
       "path": "app/docs/computer-science/data-structures/array/02-dynamic-array.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ai7cmwf4irjaobqf7uokj3b4",
       "path": "app/docs/computer-science/data-structures/array/index.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "vti0bt2qlnr681msbk6igznc",
       "path": "app/docs/computer-science/data-structures/index.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "gkjk6stzpb44n9lv8u2ij7xx",
       "path": "app/docs/computer-science/data-structures/linked-list/01-singly-linked-list.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "lt9yrqt0ksl2liabq9ocw0z4",
       "path": "app/docs/computer-science/data-structures/linked-list/index.mdx",
-      "contributorStats": {
-        "7187663": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "7187663",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-12T08:15:57.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "uzoqs57kwc4tfut4wvgnbjhf",
       "path": "app/docs/computer-science/frontend/frontend-learning/index.mdx",
-      "contributorStats": {
-        "104760545": 1,
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-17T04:26:38.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "104760545",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-19T08:23:36.000Z",
-          "login": "KAGA11",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/104760545?v=4",
-          "htmlUrl": "https://github.com/KAGA11"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "y3xkz4kituc738jwsojo7cml",
       "path": "app/docs/computer-science/frontend/index.mdx",
-      "contributorStats": {
-        "104760545": 1,
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-17T04:26:38.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "104760545",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-19T07:17:15.000Z",
-          "login": "KAGA11",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/104760545?v=4",
-          "htmlUrl": "https://github.com/KAGA11"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ksjj9shalh6hqezx6t6am5vw",
       "path": "app/docs/computer-science/index.mdx",
-      "contributorStats": {
-        "7187663": 3,
-        "114939201": 3
-      },
-      "contributors": [
-        {
-          "githubId": "7187663",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-08T09:33:56.000Z",
-          "login": "Crokily",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/7187663?v=4",
-          "htmlUrl": "https://github.com/Crokily"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-08T08:49:43.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "ld59a8z1v84ig4rlr0p0n2a9",
       "path": "app/docs/jobs/event-keynote/coffee-chat.md",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 2
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 2,
-          "lastContributedAt": "2025-11-01T10:30:20.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-11-09T12:26:56.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "s8w3d2p5k9m4h7z1x0c2a8r6",
       "path": "app/docs/jobs/event-keynote/event-takeway.md",
-      "contributorStats": {
-        "73457237": 1,
-        "163523387": 2
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-26T11:14:38.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "73457237",
-          "contributions": 1,
-          "lastContributedAt": "2026-02-08T15:28:24.000Z",
-          "login": "TSK-Glofy",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/73457237?v=4",
-          "htmlUrl": "https://github.com/TSK-Glofy"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "u68pjetu592c9zvs3f5xa82j",
       "path": "app/docs/jobs/interview-prep/bq.md",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 1
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-26T19:56:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "163523387",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-17T23:28:46.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "fkk8ghklsr15a0s3vcxnswnj",
       "path": "app/docs/jobs/interview-prep/interview-tips.mdx",
-      "contributorStats": {
-        "114939201": 2,
-        "163523387": 3
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 3,
-          "lastContributedAt": "2025-10-18T03:06:02.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-08T08:34:04.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "cgo4lweflk5jx1hsncr8hshk",
       "path": "app/docs/jobs/interview-prep/pre-interview.md",
-      "contributorStats": {
-        "114939201": 1,
-        "163523387": 2
-      },
-      "contributors": [
-        {
-          "githubId": "163523387",
-          "contributions": 2,
-          "lastContributedAt": "2025-09-28T07:54:00.000Z",
-          "login": "Mira190",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/163523387?v=4",
-          "htmlUrl": "https://github.com/Mira190"
-        },
-        {
-          "githubId": "114939201",
-          "contributions": 1,
-          "lastContributedAt": "2025-10-08T08:46:02.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     },
     {
       "docId": "pne40puz5alzsf0f5jb0frbm",
       "path": "app/docs/jobs/interview-prep/preparations-to-get-an-offer-as-a-student.mdx",
-      "contributorStats": {
-        "90535573": 1,
-        "114939201": 2
-      },
-      "contributors": [
-        {
-          "githubId": "114939201",
-          "contributions": 2,
-          "lastContributedAt": "2025-10-27T18:01:38.000Z",
-          "login": "longsizhuo",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/114939201?v=4",
-          "htmlUrl": "https://github.com/longsizhuo"
-        },
-        {
-          "githubId": "90535573",
-          "contributions": 1,
-          "lastContributedAt": "2025-09-29T13:08:12.000Z",
-          "login": "SiYG",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/90535573?v=4",
-          "htmlUrl": "https://github.com/SiYG"
-        }
-      ]
+      "contributorStats": {},
+      "contributors": []
     }
   ]
 }
